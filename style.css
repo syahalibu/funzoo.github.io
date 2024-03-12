@@ -1,0 +1,43 @@
+/* #32cd32, #2cb32c, #269a26, #1f801f
+   #196719, #134d13, #0d330d, #061a06, #7fe07f */
+
+body {
+  background-color: #7fe07f;
+  font-family: "nunito", sans-serif;
+}
+
+#navbar {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+#navbar .nav-link {
+  color: white;
+}
+
+#navbar .nav-link:hover {
+  color: #061a06;
+}
+
+#navbar .navbar-brand {
+  color: #061a06;
+  font-size: 1.5rem;
+}
+
+#title-head h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+@media (max-width: 1450px) {
+  #title-head h1 {
+    font-weight: 100;
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 1230px) {
+  #title-head h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
+}
