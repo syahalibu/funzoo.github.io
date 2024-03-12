@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">FUNZOO</a>
         <button
@@ -42,16 +42,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Ticket</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#ticket">Ticket</a>
           </div>
         </div>
       </div>
     </nav>
 
     <div class="container-fluid px-0">
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="home">
         <div class="col-lg-6">
           <div class="text-white text-center d-none d-lg-block" id="title-head">
             <h1>WELCOME TO FUNZOO</h1>
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="about">
         <div class="col-md-6 order-2 order-md-1">
           <img src="assets/Asset2animal.jpeg" alt="" class="img-fluid" />
         </div>
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="ticket">
         <div class="col-md-6 order-2 order-md-1">
           <img src="assets/Asset4animal.jpg" alt="" class="img-fluid" />
         </div>
@@ -134,5 +134,21 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
+    <!-- CDN Link JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          let $nav = $("#navbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>

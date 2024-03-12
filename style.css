@@ -4,6 +4,7 @@
 body {
   background-color: #7fe07f;
   font-family: "nunito", sans-serif;
+  /* padding-top: 4.3rem; */
 }
 
 #navbar {
@@ -24,6 +25,11 @@ body {
   font-size: 1.5rem;
 }
 
+.navbar.scrolled {
+  background-color: #7fe07f;
+  transition: background 500ms;
+}
+
 #title-head h1 {
   font-weight: 100;
   font-size: 4rem;
@@ -42,11 +48,6 @@ body {
   line-height: 2;
 }
 
-.content {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 @media (max-width: 1450px) {
   #title-head h1 {
     font-weight: 100;
@@ -57,5 +58,11 @@ body {
   #title-head h1 {
     font-weight: 100;
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 995px) {
+  body {
+    padding-top: 4.3rem;
   }
 }
